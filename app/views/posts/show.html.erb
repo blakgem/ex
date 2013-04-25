@@ -1,0 +1,48 @@
+<head>
+<%= stylesheet_link_tag "Show_post" %>
+
+</head>
+
+<body>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag( @post.photo, :id => "Post_image" ) %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= join_tags(@post) %>
+</p>
+
+<h2>Comments</h2>
+<%= render @post.comments %>
+   
+<h2>Add a Comment:</h2>
+<%= render "comments/form" %>
+
+<br />
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+</body>
+
+<footer>
+<%= javascript_include_tag "Post_form_jquery" %>
+</footer>

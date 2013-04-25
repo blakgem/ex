@@ -1,0 +1,306 @@
+ 	// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+				/*************************************************************
+		 		*							CLASES							 *
+		 		*************************************************************/
+
+		 // TOP BAR //
+
+.Menu_option{
+	width: 65px;
+	height: 27px;
+	background-color: transparent;
+	padding: 3px 0px 0px 10px;
+	font-size: 20px; font-family: arial; color: gray;
+	text-shadow: 1px 2px 5px #000;
+	text-decoration: none;
+	position: absolute;
+	z-index: 0;
+	-webkit-transition: .5s linear;
+	-moz-transition: .5s linear;
+	-o-transition: .5s linear;
+	transition: .5s linear;
+}
+
+.Menu_option:hover{
+    background: linear-gradient(to bottom, rgba(30,30,30,1), rgba(0,30,150,1) 25%, rgba(0,30,150,1) 65%, rgba(100,100,100,1));
+	color: red;
+}
+
+.Dropdown_box{
+	width: 60px;
+	height: 25px;
+    background: rgba(150,150,150,.8);
+	padding: 5px 0px 0px 15px;
+	text-decoration: none;
+	font-size: 15px; font-family: arial; color: white;
+	text-shadow: 1px 2px 5px #000;
+	position: absolute;
+	top: 0px;
+	z-index: -10;
+	-webkit-transition: .5s linear;
+	-moz-transition: .5s linear;
+	-o-transition: .5s linear;
+	transition: .5s linear;
+}
+
+.Dropdown_box:hover{
+	color: red;
+}
+
+		// MAINBAR //
+
+.Wheel_icon{
+	width: 77px;
+	height: 80px;
+	position: relative;
+	-webkit-transition: .5s linear;
+	-moz-transition: .5s linear;
+	-o-transition: .5s linear;
+	transition: .5s linear;
+}
+
+.Wheel_icon:hover{
+
+}
+
+.Latest_posts{
+	width: 97%;
+}
+
+.Latest_post_box{
+	width: 50%;
+	height: 180px;
+	position: relative; bottom: 0px;
+	vertical-align: top;
+	-webkit-transition: .5s ease;
+}
+
+.Latest_post_box:hover{
+	background-color: rgba(105, 0, 100, .3);
+}
+
+.Latest_post_author{
+	position: relative;
+	text-align: right;
+	font-size: 12px; font-family: comic; color: #14bbc5;
+
+}
+
+.Latest_post_title{
+	position: relative; left: 5%;
+	font-size: 25px; font-family: courier; color: black;
+	text-shadow: 1px 2px 5px blue;
+}
+
+.Latest_post_image{
+	float: left;
+	width: 25%;
+}
+
+.Latest_post_content{
+	width: 75%;
+	float: left;
+}
+
+.More_link{
+	text-decoration: none;
+}
+
+.More_link:hover{
+	color: orange;
+}
+
+				/*************************************************************
+				 *							  IDs							 *
+				 *************************************************************/
+
+		// BACKGROUND //
+
+#background_image{
+	visibility: hidden;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -9999;
+}
+
+		// TOP BAR //
+
+#Topbar{
+	position: relative;
+	top: -8px;
+    background: linear-gradient(to bottom, rgba(100,100,100,1), rgba(0,30,150,1) 25%, rgba(0,30,150,1) 65%, rgba(30,30,30,1));
+	width: 100%;
+	height: 30px;
+}
+
+		/* HOME DROPDOWN */
+
+#Menu_home{
+	left: 82%;
+}
+
+#Menu_blog{
+	left: 82%;
+}
+
+#Menu_videos{
+	left: 82%;
+}
+
+#Menu_login{
+	left: 88%;
+}
+
+#img_blog{
+	position: fixed;
+	left: 95%;
+	top: 5px;
+	height: 49px;
+	width: 60px;
+	-webkit-transition: .5s linear;
+	-moz-transition: .5s linear;
+	-o-transition: .5s linear;
+	transition: .5s linear;
+}
+
+#img_blog:hover{
+	top: 15px;
+}
+
+		// SIDEBAR //
+
+#Sidebar{
+	clear: both;
+	float: left;
+	position: relative;
+	width: 20%;
+	height: 560px;
+	z-index: -9000;
+	border-radius: 15px;
+	background-color: rgba(0, 200, 0, 0);
+}
+
+#Anaglyph{
+	display: inline;
+	position: relative;
+	letter-spacing: -5px;
+	color: rgba(0, 0, 255, 0.5);
+}
+
+#Anaglyph:after{
+	content: "Anaglyph";
+	position: absolute;
+	left: 4px; top: 2px;
+	color: rgba(255, 0, 0, 0.5);
+}
+
+#Gradient{
+	text-align: center;
+	border-radius: 5px;
+	font-size: 25px;
+	font-family: arial;
+	color: gray;
+	text-shadow: 1px 2px 5px #000;
+    background: linear-gradient(to bottom, rgba(100,100,100,1), rgba(0,30,150,1) 50%, rgba(30,30,30,1));
+}
+
+#Gradient:hover{
+    background: linear-gradient(to bottom, rgba(30,30,30,1), rgba(0,30,150,1) 50%, rgba(100,100,100,1));
+}
+
+#Text_Gradient{
+  	position: relative;
+  	color: green;
+}
+
+#Text_Gradient_span{
+    background: url(gradient.png) repeat-x;
+    position: absolute;z-index: 1;
+	display: block;
+	width: 100%;
+	height: 31px;
+}
+
+		// MAINBAR //
+
+#Mainbar{
+	float: left;
+	position: relative;
+	width: 80%;
+	height: 560px;
+	z-index: -9000;
+	border-radius: 15px;
+	background-color:rgba(200, 0, 0, 0);
+}
+
+		/* POSTS TABLE */
+
+
+#Latest_post_c1f1{
+
+}
+
+
+#Latest_post_c2f1{
+	
+}
+
+#Latest_post_c1f2{
+	
+}
+
+#Latest_post_c2f2{
+	
+}
+
+#Latest_post_c1f3{
+	
+}
+
+#Latest_post_c2f3{
+	
+}
+
+		/* WHEEL ICONS */
+
+#Icon_hara{
+	left: 20%;
+	top: 70%;	
+}
+
+#Icon_gyuri{
+	left: 25%;
+	top: 50%;	
+}
+
+#Icon_jiyung{
+	left: 30%;
+	top: 45%;	
+}
+
+#Icon_nicole{
+	left: 35%;
+	top: 40%;	
+}
+
+#Icon_seungyeon{
+	left: 40%;
+	top: 30%;	
+}
+		// BOTTOMBAR //
+
+#Bottombar{
+	clear: both;
+	float: left;	
+	width: 100%;
+	position: relative;
+	height: 80px;
+	z-index: -9000;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 100, 0.7);
+}
