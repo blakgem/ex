@@ -26,50 +26,7 @@
 <div id="Mainbar">
 
     <div class="Latest_posts">
-    	<table>
-    	  <tr>    		
-    	    <td id="Latest_post_c1f1" class="Latest_post_box"> 
-    	    	<div class="Latest_post_title"><%= @latest_posts[-1].title %></div>
-				<div class="Latest_post_author">Created <%= @latest_posts[-1].created_at.to_date.strftime("%m/%d/%Y") %> By <%= @latest_posts[-1].name %></div>
-                 <div><%= image_tag( @latest_posts[-1].photo, :class => "Latest_post_image" ) %></div>
-   	    	<div class="Latest_post_content"><%= @latest_posts[-1].content[0,300] %><%= link_to(" ...Read more", @latest_posts[-1], :class => "More_link") %></div>
-    	    </td>
-    		<td id="Latest_post_c2f1" class="Latest_post_box">
-    			<div class="Latest_post_title"><%= @latest_posts[-2].title %></div>
-                <div class="Latest_post_author">Created <%= @latest_posts[-2].created_at.to_date.strftime("%m/%d/%Y") %> By <%= @latest_posts[-2].name %></div>
-                <div><%= image_tag( @latest_posts[-2].photo, :class => "Latest_post_image" ) %></div>
-    	    	<div class="Latest_post_content"><%= @latest_posts[-2].content[0,300] %><%= link_to(" ...Read more", @latest_posts[-2], :class => "More_link") %></div>
-    		</td>
-    	  </tr>
-    	  <tr>
-    		<td id="Latest_post_c1f2" class="Latest_post_box">
-    			<div class="Latest_post_title"><%= @latest_posts[-3].title %></div>
-                <div class="Latest_post_author">Created <%= @latest_posts[-3].created_at.to_date.strftime("%m/%d/%Y") %> By <%= @latest_posts[-3].name %></div>
-                <div><%= image_tag( @latest_posts[-3].photo, :class => "Latest_post_image" ) %></div>
-    	    	<div class="Latest_post_content"><%= @latest_posts[-3].content[0,300] %><%= link_to(" ...Read more", @latest_posts[-3], :class => "More_link") %></div>
-    		</td>    	      	      		
-    	    <td id="Latest_post_c2f2" class="Latest_post_box"> 
-    	    	<div class="Latest_post_title"><%= @latest_posts[-4].title %></div>
-                <div class="Latest_post_author">Created <%= @latest_posts[-4].created_at.to_date.strftime("%m/%d/%Y") %> By <%= @latest_posts[-4].name %></div>
-                <div><%= image_tag( @latest_posts[-4].photo, :class => "Latest_post_image" ) %></div>
-   	    	<div class="Latest_post_content"><%= @latest_posts[-4].content[0,300] %><%= link_to(" ...Read more", @latest_posts[-4], :class => "More_link") %></div>
-    	    </td>
-    	  </tr>
-    	  <tr>
-    		<td id="Latest_post_c3f1" class="Latest_post_box">
-    			<div class="Latest_post_title"><%= @latest_posts[-5].title %></div>
-                <div class="Latest_post_author">Created <%= @latest_posts[-5].created_at.to_date.strftime("%m/%d/%Y") %> By <%= @latest_posts[-5].name %></div>
-                <div><%= image_tag( @latest_posts[-5].photo, :class => "Latest_post_image" ) %></div>
-    	    	<div class="Latest_post_content"><%= @latest_posts[-5].content[0,300] %><%= link_to(" ...Read more", @latest_posts[-5], :class => "More_link") %></div>
-    		</td>
-    		<td id="Latest_post_c3f2" class="Latest_post_box">
-    			<div class="Latest_post_title"><%= @latest_posts[-6].title %></div>
-                <div class="Latest_post_author">Created <%= @latest_posts[-6].created_at.to_date.strftime("%m/%d/%Y") %> By <%= @latest_posts[-6].name %></div>
-                <div><%= image_tag( @latest_posts[-6].photo, :class => "Latest_post_image" ) %></div>
-    	    	<div class="Latest_post_content"><%= @latest_posts[-6].content[0,300] %><%= link_to(" ...Read more", @latest_posts[-6], :class => "More_link") %></div>
-    		</td> 
-    	  </tr>
-    	</table>  
+    	
     </div>	
     <!--
    	<%= link_to image_tag('icon_hara.png', :class => 'Wheel_icon', :id => 'Icon_hara'), posts_path %>   	
